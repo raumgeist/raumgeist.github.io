@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145373054-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -10,7 +9,6 @@
 
             gtag('config', 'UA-145373054-2');
         </script>
-
         <link rel="shortcut icon" href="../../../img/favicon.png">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,8 +18,6 @@
         <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
-     
-
         <style>
         html, body, #map {
             width: 100%;
@@ -45,26 +41,27 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/a.js"></script>
-        <script src="data/b.js"></script>
-        <script src="data/c.js"></script>
-        <script src="data/d.js"></script>
-        <script src="data/e.js"></script>
-        <script src="data/f.js"></script>
-        <script src="data/g.js"></script>
-        <script src="data/h.js"></script>
-        <script src="data/i.js"></script>
-        <script src="data/j.js"></script>
-        <script src="data/k.js"></script>
-        <script src="data/l.js"></script>
+        <script src="data/_1.js"></script>
+        <script src="data/_2.js"></script>
+        <script src="data/_3.js"></script>
+        <script src="data/_4.js"></script>
+        <script src="data/_5.js"></script>
+        <script src="data/_6.js"></script>
+        <script src="data/_7.js"></script>
+        <script src="data/_8.js"></script>
+        <script src="data/2_9.js"></script>
+        <script src="data/_10.js"></script>
+        <script src="data/_11.js"></script>
+        <script src="data/_12.js"></script>
+        <script src="data/Merged_13.js"></script>
         <script>
         var southWest = L.latLng(20.033601, 116.187424);
         var northEast = L.latLng(28.061604, 124.642602); 
         var map = L.map('map', {
             zoomControl:true, maxZoom:18, minZoom:7,maxBounds: L.latLngBounds(southWest, northEast)
-        }).fitBounds([[21.99686582816337,118.09654344645864],[25.51045400981899,124.20224542262105]]);
+        }).fitBounds([[23.91244252981154,120.31144779535893],[24.02358030366881,120.48611054292483]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank"></a><a href="http://leafletjs.com" title="A JS library for interactive maps"></a>');
+        map.attributionControl.setPrefix('<a href="https://raumgeist.space" target="_blank"> Made by Raumgeist     </a>|    本地圖參考各單位資料進行繪製，已盡力確保圖資的正確程度，使用者需自行承擔相關責任</a>');
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var measureControl = new L.Control.Measure({
             position: 'topleft',
@@ -83,7 +80,7 @@
         }
         var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             opacity: 1.0,
-            attribution: 'Map data by Google, Maxar Technologies, Landsat, NOAA, TerraMetrics',
+            attribution: '',
         });
         layer_GoogleSatellite_0;
         map.addLayer(layer_GoogleSatellite_0);
@@ -500,6 +497,38 @@
         });
         bounds_group.addLayer(layer__12);
         map.addLayer(layer__12);
+        function pop_Merged_13(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['popup'] !== null ? Autolinker.link(String(feature.properties['popup'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Merged_13_0() {
+            return {
+                pane: 'pane_Merged_13',
+                opacity: 1,
+                color: 'rgba(255,78,81,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+            }
+        }
+        map.createPane('pane_Merged_13');
+        map.getPane('pane_Merged_13').style.zIndex = 413;
+        map.getPane('pane_Merged_13').style['mix-blend-mode'] = 'normal';
+        var layer_Merged_13 = new L.geoJson(json_Merged_13, {
+            attribution: '',
+            pane: 'pane_Merged_13',
+            onEachFeature: pop_Merged_13,
+            style: style_Merged_13_0,
+        });
+        bounds_group.addLayer(layer_Merged_13);
+        map.addLayer(layer_Merged_13);
         setBounds();
         </script>
     </body>

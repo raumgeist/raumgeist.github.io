@@ -1,0 +1,1178 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "O-A0003-001",
+    "fields": [
+      {
+        "id": "lat",
+        "type": "Double"
+      },
+      {
+        "id": "lon",
+        "type": "Double"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "stationId",
+        "type": "String"
+      },
+      {
+        "id": "description",
+        "type": "String"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "elementValue",
+        "type": "String"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": [
+      {
+        "lat": "10.371770",
+        "lon": "114.356682",
+        "locationName": "南沙島",
+        "stationId": "469020",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "4.50"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "30"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "5.30"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "27.20"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.86"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1011.70"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "10.10"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "50"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0009"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "5"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "30"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0003"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "27.30"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0024"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "27.20"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "10"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "高雄市"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "05"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "旗津區"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "329"
+          }
+        ]
+      },
+      {
+        "lat": "25.184391",
+        "lon": "121.521515",
+        "locationName": "鞍部",
+        "stationId": "466910",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "832.60"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "240"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "1.80"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "8.20"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "1"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "1"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "6.80"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "110"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0012"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "2"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "180"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0013"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "8.40"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0018"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "8.10"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0025"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "臺北市"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "01"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "北投區"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "006"
+          }
+        ]
+      },
+      {
+        "lat": "24.960840",
+        "lon": "121.516499",
+        "locationName": "新店",
+        "stationId": "A0A9M0",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "24.0580"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "110"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "1.50"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "14.90"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.74"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1024.30"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "4"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "140"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0050"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "1.70"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "140"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0054"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "新北市"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "06"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "新店區"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "050"
+          }
+        ]
+      },
+      {
+        "lat": "24.765792",
+        "lon": "121.748343",
+        "locationName": "宜蘭",
+        "stationId": "467080",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "7.40"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "280"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "1.10"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "14.90"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.79"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1026.20"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "3"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "250"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0032"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "2.10"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "320"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0004"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "14.90"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0023"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "14.60"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "宜蘭縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "07"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "宜蘭市"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "075"
+          }
+        ]
+      },
+      {
+        "lat": "22.357445",
+        "lon": "120.895740",
+        "locationName": "大武",
+        "stationId": "467540",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "8.10"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "10"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "3.10"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "19.60"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.63"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1022.80"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "7.60"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "30"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0037"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "3.80"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "20"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0040"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "19.90"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "19.60"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0105"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "臺東縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "22"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "大武鄉"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "342"
+          }
+        ]
+      },
+      {
+        "lat": "23.497671",
+        "lon": "120.424783",
+        "locationName": "嘉義",
+        "stationId": "467480",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "26.90"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "30"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "2"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "14.80"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.79"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1020.50"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "3.40"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "10"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0051"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "2.30"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "20"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0051"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "14.80"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0024"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "14.50"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "嘉義市"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "09"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "西區"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "219"
+          }
+        ]
+      },
+      {
+        "lat": "24.598558",
+        "lon": "121.849199",
+        "locationName": "蘇澳",
+        "stationId": "467060",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "24.90"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "270"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "4.10"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "15"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.81"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1023.80"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "7.50"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "280"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0036"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "4.60"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "280"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0037"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "15.20"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0050"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "14.60"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "宜蘭縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "07"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "蘇澳鎮"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "354"
+          }
+        ]
+      },
+      {
+        "lat": "24.381794",
+        "lon": "121.351835",
+        "locationName": "武陵",
+        "stationId": "D2F230",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "1734"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "990"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "0.40"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "5.30"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.92"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "1.30"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "260"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0005"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "0.50"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "990"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0013"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "5.40"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0010"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "5.10"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0005"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "臺中市"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "02"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "和平區"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "104"
+          }
+        ]
+      },
+      {
+        "lat": "25.163883",
+        "lon": "121.536332",
+        "locationName": "竹子湖",
+        "stationId": "466930",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "607.10"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "80"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "2"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "9.50"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.93"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "955.50"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0.50"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "6.60"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "110"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0100"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "2"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "50"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0100"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "9.90"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "9.50"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0103"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "臺北市"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "01"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "北投區"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "006"
+          }
+        ]
+      },
+      {
+        "lat": "22.005659",
+        "lon": "120.738307",
+        "locationName": "恆春",
+        "stationId": "467590",
+        "time": {
+          "obsTime": "2020-02-09 01:10:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "ELEV",
+            "elementValue": "22.30"
+          },
+          {
+            "elementName": "WDIR",
+            "elementValue": "60"
+          },
+          {
+            "elementName": "WDSD",
+            "elementValue": "7.40"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "19.60"
+          },
+          {
+            "elementName": "HUMD",
+            "elementValue": "0.78"
+          },
+          {
+            "elementName": "PRES",
+            "elementValue": "1019.90"
+          },
+          {
+            "elementName": "24R",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_FX",
+            "elementValue": "18"
+          },
+          {
+            "elementName": "H_XD",
+            "elementValue": "60"
+          },
+          {
+            "elementName": "H_FXT",
+            "elementValue": "0045"
+          },
+          {
+            "elementName": "H_F10",
+            "elementValue": "8.60"
+          },
+          {
+            "elementName": "H_10D",
+            "elementValue": "60"
+          },
+          {
+            "elementName": "H_F10T",
+            "elementValue": "0052"
+          },
+          {
+            "elementName": "H_UVI",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "D_TX",
+            "elementValue": "19.80"
+          },
+          {
+            "elementName": "D_TXT",
+            "elementValue": "0001"
+          },
+          {
+            "elementName": "D_TN",
+            "elementValue": "19.50"
+          },
+          {
+            "elementName": "D_TNT",
+            "elementValue": "0041"
+          },
+          {
+            "elementName": "D_TS",
+            "elementValue": "0"
+          },
+          {
+            "elementName": "H_VIS",
+            "elementValue": "-99"
+          },
+          {
+            "elementName": "H_Weather",
+            "elementValue": "-99"
+          }
+        ],
+        "parameter": [
+          {
+            "parameterName": "CITY",
+            "parameterValue": "屏東縣"
+          },
+          {
+            "parameterName": "CITY_SN",
+            "parameterValue": "20"
+          },
+          {
+            "parameterName": "TOWN",
+            "parameterValue": "恆春鎮"
+          },
+          {
+            "parameterName": "TOWN_SN",
+            "parameterValue": "350"
+          }
+        ]
+      }
+    ]
+  }
+}
