@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>deck.gl Viewport Transition Example</title>
+
+    <script src="https://unpkg.com/deck.gl@^7.0.0/dist.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+
+    <style type="text/css">
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #control-panel {
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 12px;
+        padding: 20px;
+        line-height: 2;
+        z-index: 1;
+        background: #fff;
+        border: solid 1px #ccc;
+        border-bottom-color: #bbb;
+        border-radius: 3px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+      }
+      #tooltip {
+        position: absolute; 
+        background: white;
+        margin: 10px; padding: 10px;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="tooltip"></div>
+    <div id="control-panel"></div>
+    
+    
+  </body>
+
+  <script type="text/javascript">
+    const bustnnurl ='https://ptx.transportdata.tw/MOTC/v2/Bus/RealTimeByFrequency/City/Tainan?$format=JSON';
+    const stationurl= 'https://ptx.transportdata.tw/MOTC/v2/Bus/Station/City/Tainan?$format=JSON';
+    const {DeckGL, ScatterplotLayer, FlyToInterpolator} = deck;
+
+    // Data
+    
+
+    const  bustnn=fetch(bustnnurl)
+    .then(res => res.json())
+    .catch(err =>console.log('error'));
+    const  stationtnn=fetch(stationurl)
+    .then(res => res.json())
+    .catch(err =>console.log('error'));
+
+    // Deck canvas
+    const deckgl = new DeckGL({
+      mapboxApiAccessToken: 'pk.eyJ1IjoiZ3JhbnRhYmM5OSIsImEiOiJjamhoZ2VrMGcxdDdmM2FwM3U2emkxZDBjIn0.RFRCH0jQOLFTAK7g93VM7Q',
+      mapStyle: 'mapbox://styles/mapbox/light-v9',
+      viewState: {
+        longitude: CITIES[0].longitude,
+        latitude: CITIES[0].latitude,
+        zoom: 10
+      },
+      layers: [
+        new ScatterplotLayer({
+            id: '01',
+          data: CITIES,
+          getPosition: d => [d.longitude, d.latitude],
+          getColor: [255, 180, 0],
+          radiusMinPixels: 0
+        }),
+
+        new ScatterplotLayer({
+            id: '02',
+          getPosition: [0,0],
+          getColor: [255,255, 255],
+          radiusMinPixels: 5
+        }),
+
+        new ScatterplotLayer({
+            id: 'scattertnn',
+            pickable:true,
+            onHover: ({object, x, y}) => {
+                const el = document.getElementById('tooltip');
+                if (object) {
+                let businfo=object.SubRouteName.Zh_tw;
+                el.innerHTML = `<h1>線路：${businfo}</h1>`
+                //el.style.display = 'block';
+                el.style.opacity = 0.9;
+                el.style.size = 10;
+                el.style.left = x + 'px';
+                el.style.top = y + 'px';
+                } else {
+                el.style.opacity = 0.0;
+                }
+            },
+            data :bustnn,
+            opacity: 0.8,
+            filled: true,
+            radiusMinPixels: 2,
+            radiusMaxPixels: 500,
+            getRadius: 10,
+            //getRadius: d => d.object.records.location.weatherElement.elementValue,
+            getPosition: d => [d.BusPosition.PositionLon, d.BusPosition.PositionLat],
+            getFillColor: [82, 204, 155, 150] 
+            }),
+
+
+      ]
+    });
+
+    // Create radio buttons
+    const inputs = d3.select('#control-panel').selectAll('div')
+      .data(bustnnurl)
+      .enter().append('control-panel');
+
+    inputs.append('input')
+      .attr('type', 'radio')
+      .attr('name', 'city')
+      .attr('id', (d, i) => 'city-' + i)
+      .on('change', d => {
+        deckgl.setProps({
+          viewState: {
+            longitude: d.longitude,
+            latitude: d.latitude,
+            zoom: 14,
+            transitionInterpolator: new FlyToInterpolator(),
+            transitionDuration: 500
+          }
+        })
+      });
+
+    inputs.append('label')
+      .attr('for', (d, i) => 'city-' + i)
+      .text(d => d.city + ', ' + d.state);
+
+    // Default select the first city
+    inputs.select('input').node().checked = true;
+
+  </script>
+</html>

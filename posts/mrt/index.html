@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>環狀線車站地圖</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="shortcut icon" href="../../img/favicon.png">
+<script src="https://unpkg.com/deck.gl@^7.0.0/dist.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+<style>
+	body { margin: 0; padding: 0; }
+	#mapz { position: absolute; top: 0; bottom: 0; width: 100%; }
+    #tooltip {
+        position: absolute; 
+        background: white;
+        margin: 10px; padding: 10px;
+        font-size: 10px;
+        font-family: 'Noto Sans TC', sans-serif;
+        }
+    
+</style>
+</head>
+<body>
+   <div id="mapz"></div>
+    <div id="info"></div>
+    <script src="app.js"></script>
+    <div id="tooltip"></div>
+    
+</body>
+</html>
