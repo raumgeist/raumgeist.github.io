@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Bus Expriment</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="shortcut icon" href="../../img/favicon.png">
+<script src="https://unpkg.com/deck.gl@^7.0.0/dist.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<style>
+	body { margin: 0; padding: 0; }
+	#mapz { position: absolute; top: 0; bottom: 0; width: 100%; }
+    #tooltip {
+        position: absolute; 
+        background: white;
+        margin: 10px; padding: 10px;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        }
+    
+</style>
+</head>
+<body>
+   <div id="mapz"></div>
+    <div id="info"></div>
+    <script>
+        const url ='https://ptx.transportdata.tw/MOTC/v2/Bus/Schedule/City/Tainan?$format=JSON';
+
+        var  schedule=fetch(url)
+        .then(res => res.json())
+        .catch(err =>console.log('error'));
+
+
+
+    </script>
+    <div id="tooltip"></div>
+    
+</body>
+</html>
