@@ -3,6 +3,11 @@
 	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 </head>
 
+<style>
+	body { margin: 0; padding: 0; }
+</style>
+
+
 <body>
     <div id='plot'><!-- Plotly chart will be drawn inside this DIV --></div>
     <script>
@@ -15,7 +20,7 @@
             x:unpack(rows, 'empty'), y: unpack(rows, 'popdelta'), z: unpack(rows, 'median'),
             mode: 'markers',
             marker: {
-                size: 1,
+                size: 5,
                 line: {
                 color: 'rgba(217, 217, 217, 0.14)',
                 width: 0.5},
