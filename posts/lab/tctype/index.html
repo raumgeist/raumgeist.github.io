@@ -2,9 +2,9 @@
 	<!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 </head>
-
+<link rel="shortcut icon" href="../../img/favicon.png">
 <style>
-	body { margin: 0; padding: 0; }
+	body {  position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 
 
@@ -17,7 +17,7 @@
             { return row[key]; });}
         
         var trace1 = {
-            空屋率:unpack(rows, 'empty'), 人口變化率: unpack(rows, 'popdelta'), 所得中位數: unpack(rows, 'median'),
+            x:unpack(rows, 'empty'), y: unpack(rows, 'popdelta'), z: unpack(rows, 'median'),
             mode: 'markers',
             marker: {
                 size: 5,
