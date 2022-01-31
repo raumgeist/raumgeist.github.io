@@ -1616,7 +1616,13 @@ h6 {
   margin: auto;
   display: block;
 }
-
+.aboutmap{
+  max-width: 150%;
+  text-align: center;
+  margin: auto;
+  height: 400px;
+  display: block;
+}
 
 a.posttitle {
   font-family: 'Noto Sans TC', sans-serif;
